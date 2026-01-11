@@ -102,7 +102,7 @@
          int counter = 0;
          for(int i = 0; i < this.follows.length; i++){
             for(int j = 0; j < other.follows.length; j++){
-                if(this.follows[i] == other.follows[j] && this.follows[i] != null){
+                if(this.follows[i] != null && this.follows[i].equals(other.follows[j])){
                     counter++;
                 }
             }
